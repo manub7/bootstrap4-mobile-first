@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0c0aa31012.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body>
@@ -44,7 +46,7 @@
         </div>
 
     </nav>
-    <article class="container mt-3">
+    <!-- <div class="container alert-container"> 
         <div class="row d-none d-sm-block">
             <div class="col-12">
                 <div class="alert alert-warning">
@@ -53,25 +55,28 @@
                 </div>
             </div>
         </div>
+         -->
         <!-- Callout -->
-        <div class="row">
-            <div class="col-12">
-                <section class="callout jumbotron text-center">
-                    <h1>The finest whiskeys delivered to your doorstep.</h1>
-                    <p clas="lead">Sign up today to start receiving the world's best whiskeys every month.
-                        <s class="d-none d-sm-inline">19.99</s>
-                        <span class="d-inline d-sm-none"><br></span>
-                        <strong><mark> First one is free!</mark></strong></p>
-                    <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
-                    <p class="text-muted"><small> You must be over 18 to sign up to our service. Please drink responsibly </small></p>
-                </section>
+        <div class="container-fluid callout-container">
+            <div class="row">
+                <div class="col-12">
+                    <section class="callout jumbotron text-center">
+                        <h1>The finest whiskeys delivered to your doorstep.</h1>
+                        <p clas="lead">Sign up today to start receiving the world's best whiskeys every month.
+                            <s class="d-none d-sm-inline">19.99</s>
+                            <span class="d-inline d-sm-none"><br></span>
+                            <strong><mark> First one is free!</mark></strong></p>
+                        <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
+                        <p class="text-muted"><small> You must be over 18 to sign up to our service. Please drink responsibly </small></p>
+                    </section>
+                </div>
             </div>
         </div>
-
         <!-- /.callout -->
-        <hr>
+    </div>
 
-        <!-- Quotes -->
+    <!-- Quotes -->
+    <div class="container container-quotes">
         <section class="quotes">
             <div class="row">
                 <div class="col-12 my-5">
@@ -107,12 +112,13 @@
                     </div>
                 </div>
             </div>
+    </div>
+    </section>
+    <!-- /.quotes -->
 
-        </section>
-        <!-- /.quotes -->
-        <hr>
 
-        <!-- Features -->
+    <!-- Features -->
+    <div class="features-container">
         <section class="features">
             <div class="row">
                 <div class="col-12 my-5">
@@ -147,14 +153,14 @@
                     </div>
                 </div>
             </div>
-
-        </section>
-        <!-- /.features -->
-    </article>
+    </div>
+    </section>
+    <!-- /.features -->
+    </div>
 
     <!-- /Modla dialog -->
 
-     <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+    <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
